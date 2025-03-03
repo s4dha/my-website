@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+    <style>
+        .text {
+            font-size: 18px;
+            color: black;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p id="myParagraph">Hi muhil hehe are you able to read this!</p>
+    <button id="myButton" onclick="changeText2()">Click Me PLZZz for a surprise</button>
+    <button id="myButton2" onclick="changeText2()">Click Me PLZZz for another surprise</button>
+    
+    <script>
+    
+        function changeText2() {
+            let element = document.getElementById("myParagraph");
+            element.innerHTML = "I love youuuu!";
+        }
+
+        document.getElementById("myButton2").onclick = function() {
+            alert("You are a donkey!");
+        };
+
+    </script>
+
+</body>
+</html>
